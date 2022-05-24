@@ -1,0 +1,23 @@
+.cardBox {
+  margin: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(51, 94, 168);
+  border-radius: 20px;
+}
+
+.cardPic > img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cardDetails {
+  margin: 0;
+  margin-left: 12px;
+  text-align: left;
+}

@@ -1,0 +1,28 @@
+.Cards {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin: 20px 20px;
+  max-width: 380px;
+  min-height: 220px;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding: 0;
+  margin: 36px 0 20px 0;
+  font-size: 2.4rem;
+}
+
+.details {
+  position: absolute;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  float: right;
+  width: 54px;
+  margin: 10px 0 0 0;
+}
