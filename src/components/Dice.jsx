@@ -22,24 +22,13 @@ const Dice = () => {
   const [diceThrow, setDiceThrow] = useState(true);
 
   const togglePicture = () => {
-    setDiceThrow(!diceThrow);
-    console.log(diceThrow + '1');
-    /* setDiceThrow(diceThrow); */
-    /*     if (!diceThrow) {
-      setDiceThrow(diceThrow);
-      console.log(diceThrow + '2');
-    }
-    */
+    setTimeout(() => {
+      setDiceThrow(!diceThrow);
+      console.log(diceThrow + '1');
+    }, 1000);
   };
 
   const picture = diceThrow ? arrayOfDice[randomNumber] : dice0;
-
-  /*   const [firstState, setFirstState] = useState(randomNumber);
-  const [secondState, setSecondState] = useState(dice0);
-
-  const randomPic = () => {
-    setSecondState(arrayOfDice[randomNumber]); 
-  }; */
 
   return (
     <div>

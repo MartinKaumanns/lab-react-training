@@ -1,25 +1,8 @@
 import '../DriverCard.css';
+import Rating from './Rating';
 
 const DriverCard = (props) => {
   const { name, rating, img, car } = props;
-
-  const roundingfunct = (val) => {
-    let num = Math.round(val);
-
-    if (num === 0) {
-      return '☆☆☆☆☆';
-    } else if (num === 1) {
-      return '★☆☆☆☆';
-    } else if (num === 2) {
-      return '★★☆☆☆';
-    } else if (num === 3) {
-      return '★★★☆☆';
-    } else if (num === 4) {
-      return '★★★★☆';
-    } else if (num === 5) {
-      return '★★★★★';
-    }
-  };
 
   return (
     <div className="driverCard">
@@ -29,7 +12,7 @@ const DriverCard = (props) => {
         </div>
         <div className="cardDetails">
           <h2>{name}</h2>
-          <h2>{roundingfunct(rating)}</h2>
+          <Rating>{rating}</Rating>
           <p>
             {car.model} – {car.licensePlate}
           </p>

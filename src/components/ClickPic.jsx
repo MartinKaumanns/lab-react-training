@@ -12,8 +12,8 @@ const ClickPic = () => {
   const picture = isClicked ? maxcenceShades : maxcence;
   return (
     <div>
-      <div onClick={togglePicture}>
-        <span>
+      <div>
+        <span onClick={togglePicture}>
           <img alt="" src={picture} />
         </span>
       </div>

@@ -1,24 +1,28 @@
+import '../IdCard.css';
+
 const IdCard = (props) => {
   return (
-    <div>
-      <p>
-        <strong> Last name: </strong> {props.lastName}
-      </p>
-      <p>
-        <strong> First name: </strong> {props.firstName}
-      </p>
-      <p>
-        <strong> Gender:</strong>
-        {props.gender}
-      </p>
-      <p>
-        <strong> Height:</strong>
-        {props.height}
-      </p>
-      <p>
-        <strong>Birth: </strong> {props.birth.toLocaleDateString()}
-      </p>
+    <div className="list">
       <img src={props.picture} alt="profilePic" />
+      <ul>
+        <li>
+          <strong> Last name: </strong> {props.lastName}
+        </li>
+        <li>
+          <strong> First name: </strong> {props.firstName}
+        </li>
+        <li>
+          <strong> Gender: </strong>
+          {props.gender}
+        </li>
+        <li>
+          <strong> Height: </strong>
+          {props.height / 100} m
+        </li>
+        <li>
+          <strong>Birth: </strong> {props.birth.toDateString()}
+        </li>
+      </ul>
     </div>
   );
 };

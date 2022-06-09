@@ -10,8 +10,16 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import ClickPic from './components/ClickPic';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+
+import Dog from './assets/images/aureanne-mailhiot-N5AHY2dk1mU-unsplash.jpg';
+import Cat01 from './assets/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg';
+import Cat02 from './assets/images/lina-angelov-Ah_QC2v2alE-unsplash.jpg';
+import Cat03 from './assets/images/karina-vorozheeva-rW-I87aPY5Y-unsplash.jpg';
 
 function App() {
+  const arrayOfPicture = [Dog, Cat01, Cat02, Cat03];
   return (
     <div className="App">
       <IdCard
@@ -121,6 +129,9 @@ function App() {
       <ClickPic />
 
       <Dice />
+      <Carousel images={arrayOfPicture} />
+
+      <NumbersTable limit={12} />
     </div>
   );
 }

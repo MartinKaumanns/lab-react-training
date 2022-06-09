@@ -17,8 +17,9 @@ h1 {
 .details {
   position: absolute;
   text-align: left;
-  margin: 0;
+  margin: 1.6em 0 0 0;
   padding: 0;
+  line-height: 0.25em;
 }
 
 .logo {

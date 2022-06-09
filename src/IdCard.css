@@ -1,0 +1,11 @@
+.list {
+  margin: 1em;
+  padding: 0.25em;
+  display: flex;
+  border: 1px solid black;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}

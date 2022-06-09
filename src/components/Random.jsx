@@ -1,3 +1,5 @@
+import '../Greetings.css';
+
 const Random = (props) => {
   const { min, max } = props;
   const generateNumber = (val1, val2) =>
@@ -5,8 +7,8 @@ const Random = (props) => {
   const randomNumber = generateNumber(min, max);
 
   return (
-    <div>
-      A random Number between {min} and {max} => {randomNumber}
+    <div className="greeting">
+      A random Number between {min} and {max} =&gt; {randomNumber}
     </div>
   );
 };

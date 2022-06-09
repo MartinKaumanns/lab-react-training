@@ -19,6 +19,9 @@ const CreditCard = (props) => {
     color: `${color}`,
   };
 
+  /*   const formatedExpirationMonth =
+    expirationMonth < 10 ? 0`${expirationMonth}` : { expirationMonth }; */
+
   const typeLogofunct = (word) => {
     if (word === 'Visa') {
       return <img src={imgVisa} alt="Visa" className="logo" />;
@@ -39,9 +42,10 @@ const CreditCard = (props) => {
         <h1>{censoredNumberfunct(number)}</h1>
         <div className="details">
           <p>
-            <span>{expirationMonth} </span>
-            <span>{expirationYear} </span>
-            <span>{bank}</span>
+            <span>
+              Expires on {expirationMonth} / {expirationYear - 2000}
+            </span>
+            <span> {bank}</span>
           </p>
           <p>{owner}</p>
         </div>

@@ -23,7 +23,7 @@ const LikeButton = () => {
         style={{ backgroundColor: bgColor[colorCount], color: 'white' }}
         onClick={() => fancyClicking()}
       >
-        {count} Likes
+        {count} Like{count === 1 ? '' : 's'}
       </button>
     </div>
   );

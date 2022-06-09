@@ -1,3 +1,5 @@
+import '../Greetings.css';
+
 const Greetings = (props) => {
   let greeting;
   switch (props.lang) {
